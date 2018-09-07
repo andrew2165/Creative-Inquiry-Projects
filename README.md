@@ -1,1 +1,1 @@
-# Creative_Inquiry_Project_1
+# Creative Inquiry Project 1
