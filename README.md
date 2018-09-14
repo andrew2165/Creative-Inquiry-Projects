@@ -1,4 +1,4 @@
-# Creative Inquiry Project 1
+# Creative Inquiry Projects Repo
 
 Repository for Source Code of my 2018 Creative Inquiry Projects
 
