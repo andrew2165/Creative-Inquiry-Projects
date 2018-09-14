@@ -1,15 +1,33 @@
 # To use this program simply replace the file paths on lines 6 and 9
-# with the path to the folder containing the images and the path to the Metadata
-# file respecitively. This will allow for the program to check the filenames
-# against the metadata to ensure that there are matches
+# with the path to the folder containing the images and the path to the
+# Metadata file respecitively. This will allow for the program to check the
+# filenames against the metadata to ensure that there are matches
 
-import os, csv, re
+import os
+import csv
+import re
+from tkinter import filedialog as fd
+
+currentdir = os.getcwd()
+
+in_path = fd.askdirectory(initialdir=currentdir, title='Choose Folder')
+# in_path = pre_in_path.name
+comma_file = fd.askopenfilename(initialdir=currentdir, title='Choose Metadata File')
+for i in range(0, 1):
+    if len(comma_file) > 0:
+        continue
+    else:
+        break
+    if len(in_path) > 0:
+        continue
+    else:
+        break
 
 files = []
-for filenames in os.walk('/Users/andrewstewart/ImageJ_testing/20180830-NZ-repeat'):
+for filenames in os.walk(in_path):
     files.append(filenames)
 
-comma_file = open('/Users/andrewstewart/ImageJ_testing/20180830-NZ-repeat/Original_Metadata_-_20180830-NZ-repeat.csv')
+# comma_file = open(meta_file)
 comma_reader = csv.reader(comma_file)
 comma_list = list(comma_reader)
 
