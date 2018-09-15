@@ -1,7 +1,5 @@
-# To use this program simply replace the file paths on lines 6 and 9
-# with the path to the folder containing the images and the path to the
-# Metadata file respecitively. This will allow for the program to check the
-# filenames against the metadata to ensure that there are matches
+#! python3
+# Crossreferences images with the metadata 
 
 import os
 import csv
