@@ -1,5 +1,5 @@
 # File Processing 13Sept2018
-# Just grabbing C0, doing a max projection, and saving in a decent file system.
+# Just grabbing C0, doing a max projection, and saving.
 
 import os, csv, re
 from ij import IJ
